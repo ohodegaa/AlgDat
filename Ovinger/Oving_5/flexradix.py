@@ -14,18 +14,23 @@ def flexradix(A, d, i):
 
     return A
 
-def sort_by_index(A, i):
+def sort_by_index(A, start, end, i):
     sorted_list = []
     partitions = {}
-    for word in A:
+    for word in A[start:end+1]:
         if i >= len(word):
             sorted_list.append(word)
         elif partitions.get(word[i]) is None:
             partitions[word[i]] = [word]
         else:
             partitions[word[i]].append(word)
+    for i in range(ord('a'), ord('z') + 1):
+        try:
+            sorted_list.extend(partitions[chr(i)])
+        except:
+            pass
 
-    return [words for words in partitions.values()]
+    A[start:end+1] = sorted_list
 
 def main():
     stdin = open("input_eksempel_01.txt", "r+")
