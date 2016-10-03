@@ -11,7 +11,7 @@ def partition(A, p, r):
     pivot = A[r]            # setter siste element som pivot
     i = p - 1               # i = en index lavere enn første element i dellista
 
-    for j in range(p, r):   # itererer på index fra start av delliste til en mindre en slutt av delliste
+    for j in range(p, r):   # itererer på index fra start av delliste til slutt av delliste (-1)
         if A[j] <= pivot:   # dersom element er lavere enn pivot
             i += 1              # inkrementer i
             e = A[i]            # bytt ut element
