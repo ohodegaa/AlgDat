@@ -1,5 +1,7 @@
 __author__ = 'ohodegaa'
 
+import random
+
 def quicksort(A, p, r):
     if p < r:
          q = partition(A, p, r)
@@ -8,6 +10,21 @@ def quicksort(A, p, r):
          quicksort(A, q + 1, r)
 
 counter = 0
+
+def randomized_quicksort(A, p, r):
+    if p < r:
+         q = randomized_partition(A, p, r)
+         print(A[p:q], " --- ", A[q+1:r+1])
+         quicksort(A, p, q - 1)
+         quicksort(A, q + 1, r)
+
+def randomized_partition(A, p, r):
+    pivot = random.randint(p, r)
+    e = A[-1]
+    A[-1] = A[pivot]
+    A[pivot] = e
+    return partition(A, p, r)
+
 def partition(A, p, r):
     global counter
     pivot = A[r]            # setter siste element som pivot

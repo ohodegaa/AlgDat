@@ -8,40 +8,33 @@ from operator import itemgetter
 from collections import defaultdict
 
 
-def flexradix(A, d, i):
 
-
-
-    return A
-
-def sort_by_index(A, start, end, i):
-    sorted_list = []
-    partitions = {}
-    for word in A[start:end+1]:
-        if i >= len(word):
-            sorted_list.append(word)
-        elif partitions.get(word[i]) is None:
-            partitions[word[i]] = [word]
+def flexradix(A, k, index):
+    B = [[] for i in range(k + 1)]
+    C = []
+    for l in range(len(A)):
+        if index >= len(A[l]):
+            C.append(A[l])
+            continue
+        iC = ord(A[l][index]) - 97
+        B[iC].append(A[l])
+    for i in range(len(B)):
+        if len(B[i]) > 1:
+            C.extend(flexradix(B[i], k, index + 1))
         else:
-            partitions[word[i]].append(word)
-    for i in range(ord('a'), ord('z') + 1):
-        try:
-            sorted_list.extend(partitions[chr(i)])
-        except:
-            pass
+            C.extend(B[i])
+    return C
 
-    A[start:end+1] = sorted_list
 
 def main():
-    stdin = open("input_eksempel_01.txt", "r+")
     d = int(stdin.readline())
     strings = []
     for line in stdin:
         strings.append(line.rstrip())
-    A = flexradix(strings, d)
+    A = flexradix(strings, 25, 0)
     for string in A:
         print(string)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
