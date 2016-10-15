@@ -6,6 +6,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/Sorting_algorithms" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/Randomized_Select" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithms/Maximum_minimum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ovinger/Oving_1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ovinger/Oving_2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ovinger/Oving_3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ovinger/Oving_4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ovinger/Oving_5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ovinger/Oving_6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ovinger/Oving_7" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.5.0rc2 (/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
