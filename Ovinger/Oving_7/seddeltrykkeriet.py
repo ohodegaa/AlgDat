@@ -28,17 +28,30 @@ def max_value(widths, heights, values, paper_width, paper_height):
         for s in range(1, paper_height + 1):
             c[i][s] = 0
 
-    # putting in values for the notes
+    # putting in values for the notes, if smaller notes fits "inside" a note, decomp_note() will handle this
     for i in range(len(values)):
+        decomped = decomp_note(widths, heights, values, i)
         if widths[i] <= paper_width and heights[i] <= paper_height and c[widths[i]][heights[i]] < values[i]:
-            c[widths[i]][heights[i]] = values[i]
+            c[widths[i]][heights[i]] = max(values[i], decomped)
         if widths[i] <= paper_height and heights[i] <= paper_width and c[heights[i]][widths[i]] < values[i]:
-            c[heights[i]][widths[i]] = values[i]
+            c[heights[i]][widths[i]] = max(values[i], decomped)
 
     max_value_dynamic(c, widths, heights, values, paper_width, paper_height)
     #show_table(c)
     return c[paper_width][paper_height]
 
+def decomp_note(widths, heights, values, i):
+    w = widths[i]
+    h = heights[i]
+    v = values[i]
+    max_value = -1
+    for j in range(len(values)):
+        if widths[j] < w and heights[j] < h:
+            max_value = max(max_value, max((widths[j]//w), (heights[j]//h))*values[j])
+        if widths[j] < h and heights[j] < w:
+            max_value = max(max_value, max((widths[j]//h), (heights[j]//w))*values[j])
+
+    return max_value
 
 def minimum_size(widths, heights):
     min_size = 10**6
@@ -89,17 +102,19 @@ def main():
     values = []
     #stdin = open("input_eksempel_01", "r+")
     for triple in stdin.readline().split():
-        dim_value = triple.split(':', 1)
-        dim = dim_value[0].split('x', 1)
-        width = int(dim[0][1:])
-        height = int(dim[1][:-1])
-        value = int(dim_value[1])
-        widths.append(int(width))
-        heights.append(int(height))
-        values.append(int(value))
+        if len(triple) > 0:
+            dim_value = triple.split(':', 1)
+            dim = dim_value[0].split('x', 1)
+            width = int(dim[0][1:])
+            height = int(dim[1][:-1])
+            value = int(dim_value[1])
+            widths.append(int(width))
+            heights.append(int(height))
+            values.append(int(value))
     for line in stdin:
-        paper_width, paper_height = [int(x) for x in line.split('x', 1)]
-        print((max_value(widths, heights, values, paper_width, paper_height)))
+        if len(line) > 0:
+            paper_width, paper_height = [int(x) for x in line.split('x', 1)]
+            print((max_value(widths, heights, values, paper_width, paper_height)))
 
 
 if __name__ == "__main__":
