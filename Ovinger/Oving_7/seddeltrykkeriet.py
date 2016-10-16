@@ -36,6 +36,7 @@ def max_value(widths, heights, values, paper_width, paper_height):
         if widths[i] <= paper_height and heights[i] <= paper_width and c[heights[i]][widths[i]] < values[i]:
             c[heights[i]][widths[i]] = max(values[i], decomped)
 
+    show_table(c)
     max_value_dynamic(c, widths, heights, values, paper_width, paper_height)
     #show_table(c)
     return c[paper_width][paper_height]
@@ -46,10 +47,10 @@ def decomp_note(widths, heights, values, i):
     v = values[i]
     max_value = -1
     for j in range(len(values)):
-        if widths[j] < w and heights[j] < h:
-            max_value = max(max_value, max((widths[j]//w), (heights[j]//h))*values[j])
-        if widths[j] < h and heights[j] < w:
-            max_value = max(max_value, max((widths[j]//h), (heights[j]//w))*values[j])
+        if widths[j] <= w and heights[j] <= h:
+            max_value = max(max_value, max((w//widths[j]), (h//heights[j]))*values[j])
+        if widths[j] <= h and heights[j] <= w:
+            max_value = max(max_value, max((h//widths[j]), (w//heights[j]))*values[j])
 
     return max_value
 
@@ -100,7 +101,7 @@ def main():
     widths = []
     heights = []
     values = []
-    #stdin = open("input_eksempel_01", "r+")
+    stdin = open("input_eksempel_01", "r+")
     for triple in stdin.readline().split():
         if len(triple) > 0:
             dim_value = triple.split(':', 1)
