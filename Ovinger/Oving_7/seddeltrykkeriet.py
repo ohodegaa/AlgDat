@@ -25,10 +25,19 @@ def max_value(widths, heights, values, paper_width, paper_height):
         # rows:
         for r in range(1, paper_width + 1):
             c[r][i] = 0
-        for c in range(1, paper_height + 1):
-            c[i][c] = 0
+        for s in range(1, paper_height + 1):
+            c[i][s] = 0
 
-    return max_value_dynamic(c, widths, heights, values, paper_width, paper_height)
+    # putting in values for the notes
+    for i in range(len(values)):
+        if widths[i] <= paper_width and heights[i] <= paper_height and c[widths[i]][heights[i]] < values[i]:
+            c[widths[i]][heights[i]] = values[i]
+        if widths[i] <= paper_height and heights[i] <= paper_width and c[heights[i]][widths[i]] < values[i]:
+            c[heights[i]][widths[i]] = values[i]
+
+    max_value_dynamic(c, widths, heights, values, paper_width, paper_height)
+    #show_table(c)
+    return c[paper_width][paper_height]
 
 
 def minimum_size(widths, heights):
@@ -41,25 +50,31 @@ def minimum_size(widths, heights):
     return min_size
 
 
-def max_value_greedy(widths, heights, values, paper_width, paper_height):
-    pass
-
-
 def max_value_dynamic(c, widths, heights, values, paper_width, paper_height):
-    if c[paper_width, paper_height] >= 0:
+    if paper_height <= 0 or paper_width <= 0:
+        return 0
+    elif c[paper_width][paper_height] >= 0:
         return c[paper_width][paper_height]
 
     else:
         for i in range(len(values)):
-            if widths[i] > paper_width or heights[i] >= paper_height:
+            if widths[i] > paper_width or heights[i] > paper_height:
                 continue
-            else:
-                c[paper_width][paper_height] = max(c[paper_width][paper_height],
-                                                   max_value_dynamic(c, widths, heights, values, paper_width - widths[i], heights[i])
-                                                   + max_value_dynamic(c, widths, heights, values, paper_width, paper_height - heights[i]),
-                                                   max_value_dynamic(c, widths, heights, values, paper_width - i, paper_height)
-                                                   + max_value_dynamic(c, widths, heights, values, widths[i], paper_height - heights[i]))
 
+            else:
+                max_upper = max_value_dynamic(c, widths, heights, values, paper_width - widths[i], heights[i])
+                #print("max_upper ", max_upper)
+                max_lower = max_value_dynamic(c, widths, heights, values, paper_width, paper_height - heights[i])
+                #print("max_lower ", max_lower)
+                max_right = max_value_dynamic(c, widths, heights, values, paper_width - widths[i], paper_height)
+                #print("max_right ", max_right)
+                max_left = max_value_dynamic(c, widths, heights, values, widths[i], paper_height - heights[i])
+                #print("max_left", max_left)
+
+                c[paper_width][paper_height] = max(c[paper_width][paper_height],
+                                                   values[i] + max_upper + max_lower,
+                                                   values[i] + max_right + max_left)
+        return c[paper_width][paper_height]
 
 def show_table(c):
     for i in range(len(c[0])):
@@ -72,6 +87,7 @@ def main():
     widths = []
     heights = []
     values = []
+    #stdin = open("input_eksempel_01", "r+")
     for triple in stdin.readline().split():
         dim_value = triple.split(':', 1)
         dim = dim_value[0].split('x', 1)
