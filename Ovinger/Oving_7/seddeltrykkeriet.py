@@ -30,29 +30,59 @@ def max_value(widths, heights, values, paper_width, paper_height):
 
     # putting in values for the notes, if smaller notes fits "inside" a note, decomp_note() will handle this
     for i in range(len(values)):
-        decomped = decomp_note(widths, heights, values, i)
+        w = widths[:]
+        w.remove(w[i])
+        h = heights[:]
+        h.remove(h[i])
+        v = values[:]
+        v.remove(v[i])
+        decomped = decomp_note(w, h, v, widths[i], heights[i], values[i])
         if widths[i] <= paper_width and heights[i] <= paper_height and c[widths[i]][heights[i]] < values[i]:
             c[widths[i]][heights[i]] = max(values[i], decomped)
         if widths[i] <= paper_height and heights[i] <= paper_width and c[heights[i]][widths[i]] < values[i]:
             c[heights[i]][widths[i]] = max(values[i], decomped)
 
-    show_table(c)
+    #show_table(c)
     max_value_dynamic(c, widths, heights, values, paper_width, paper_height)
     #show_table(c)
     return c[paper_width][paper_height]
 
-def decomp_note(widths, heights, values, i):
-    w = widths[i]
-    h = heights[i]
-    v = values[i]
-    max_value = -1
-    for j in range(len(values)):
-        if widths[j] <= w and heights[j] <= h:
-            max_value = max(max_value, max((w//widths[j]), (h//heights[j]))*values[j])
-        if widths[j] <= h and heights[j] <= w:
-            max_value = max(max_value, max((h//widths[j]), (w//heights[j]))*values[j])
+def decomp_note(widths, heights, values, paper_width, paper_height, value):
 
-    return max_value
+    # zeroing out the less-than-minimum-sized note. No note will be smaller than min_size
+    min_size = minimum_size(widths, heights)
+    if min_size <= paper_width and min_size <= paper_height:
+        return value
+
+    # c 2-D - array
+    # accessing table with c[width][height] according to coordinate system
+    c = [[]] * (paper_width + 1)
+    for i in range(paper_width + 1):
+        c[i] = [-1] * (paper_height + 1)
+
+    # zeroing out width=0 and height=0
+    for j in range(len(c)):
+        c[j][0] = 0
+    for k in range(len(c[0])):
+        c[0][k] = 0
+
+
+    for i in range(1, min_size):
+        # rows:
+        for r in range(1, paper_width + 1):
+            c[r][i] = 0
+        for s in range(1, paper_height + 1):
+            c[i][s] = 0
+
+    # putting in values for the notes, if smaller notes fits "inside" a note, decomp_note() will handle this
+    for i in range(len(values)):
+        if widths[i] <= paper_width and heights[i] <= paper_height and c[widths[i]][heights[i]] < values[i]:
+            c[widths[i]][heights[i]] = max(values[i])
+        if widths[i] <= paper_height and heights[i] <= paper_width and c[heights[i]][widths[i]] < values[i]:
+            c[heights[i]][widths[i]] = max(values[i])
+
+    max_value_dynamic(c, widths, heights, values, paper_width, paper_height)
+    return c[paper_width][paper_height]
 
 def minimum_size(widths, heights):
     min_size = 10**6
