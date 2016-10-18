@@ -35,16 +35,18 @@ def max_value(widths, heights, values, paper_width, paper_height):
             c[heights[i]][widths[i]] = values[i]
 
     #show_table(c)
-    max_value_dynamic(c, widths, heights, values, paper_width, paper_height, min_size)
+    max_value = max_value_top_down(c, widths, heights, values, paper_width, paper_height, min_size)
     #show_table(c)
-    return c[paper_width][paper_height]
+    return max_value
+
+
+def max_value_bottom_up(c, widths, heights, values, paper_width, paper_height, min_size):
 
 
 
 
 
-
-def max_value_dynamic(c, widths, heights, values, paper_width, paper_height, min_size):
+def max_value_top_down(c, widths, heights, values, paper_width, paper_height, min_size):
     if paper_height < 0 or paper_width < 0:
         return 0
     elif c[paper_width][paper_height] > min_size:
@@ -56,13 +58,13 @@ def max_value_dynamic(c, widths, heights, values, paper_width, paper_height, min
                 continue
 
             else:
-                max_upper_a = max_value_dynamic(c, widths, heights, values, paper_width - widths[i], heights[i], min_size)
+                max_upper_a = max_value_top_down(c, widths, heights, values, paper_width - widths[i], heights[i], min_size)
 
-                max_lower_a = max_value_dynamic(c, widths, heights, values, paper_width, paper_height - heights[i], min_size)
+                max_lower_a = max_value_top_down(c, widths, heights, values, paper_width, paper_height - heights[i], min_size)
 
-                max_right_a = max_value_dynamic(c, widths, heights, values, paper_width - widths[i], paper_height, min_size)
+                max_right_a = max_value_top_down(c, widths, heights, values, paper_width - widths[i], paper_height, min_size)
 
-                max_left_a = max_value_dynamic(c, widths, heights, values, widths[i], paper_height - heights[i], min_size)
+                max_left_a = max_value_top_down(c, widths, heights, values, widths[i], paper_height - heights[i], min_size)
 
                 c[paper_width][paper_height] = max(c[paper_width][paper_height],
                                                    values[i] + max_upper_a + max_lower_a,
@@ -72,13 +74,13 @@ def max_value_dynamic(c, widths, heights, values, paper_width, paper_height, min
             if widths[j] > paper_height or heights[j] > paper_width:
                 continue
             else:
-                max_upper_b = max_value_dynamic(c, widths, heights, values, paper_width - heights[j], widths[j], min_size)
+                max_upper_b = max_value_top_down(c, widths, heights, values, paper_width - heights[j], widths[j], min_size)
 
-                max_lower_b = max_value_dynamic(c, widths, heights, values, paper_width, paper_height - widths[j], min_size)
+                max_lower_b = max_value_top_down(c, widths, heights, values, paper_width, paper_height - widths[j], min_size)
 
-                max_right_b = max_value_dynamic(c, widths, heights, values, paper_width - heights[j], paper_height, min_size)
+                max_right_b = max_value_top_down(c, widths, heights, values, paper_width - heights[j], paper_height, min_size)
 
-                max_left_b = max_value_dynamic(c, widths, heights, values, heights[j], paper_height - widths[j], min_size)
+                max_left_b = max_value_top_down(c, widths, heights, values, heights[j], paper_height - widths[j], min_size)
 
                 c[paper_width][paper_height] = max(c[paper_width][paper_height],
                                                    values[j] + max_upper_b + max_lower_b,
