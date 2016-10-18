@@ -51,7 +51,7 @@ def main():
     # Read input.
     decks = []
 
-    input_ = open("input_eksempel_01.txt", "r+")
+    input_ = open("input_eksempel_01.txt.txt", "r+")
     for line in input_:
         (index, csv) = line.strip().split(':')
         deck = list(zip(map(int, csv.split(',')), repeat(index)))
