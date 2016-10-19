@@ -35,15 +35,32 @@ def max_value(widths, heights, values, paper_width, paper_height):
             c[heights[i]][widths[i]] = values[i]
 
     #show_table(c)
-    max_value = max_value_top_down(c, widths, heights, values, paper_width, paper_height, min_size)
+    #max_value = max_value_top_down(c, widths, heights, values, paper_width, paper_height, min_size)
+    max_value = max_value_bottom_up(c, paper_width, paper_height, min_size)
     #show_table(c)
     return max_value
 
 
-def max_value_bottom_up(c, widths, heights, values, paper_width, paper_height, min_size):
+def max_value_bottom_up(c, paper_width, paper_height, min_size):
 
+    for w in range(min_size, paper_width + 1):
+        for h in range(min_size, paper_height + 1):
+            if c[w][h] == 0:
+                continue
+            if c[w][h] == -1:
+                highest_val = 0
+            else:
+                highest_val = c[w][h]
 
+            for cut_w in range(1, w):
+                if highest_val < c[cut_w][h] + c[w - cut_w][h]:
+                    highest_val = c[cut_w][h] + c[w - cut_w][h]
+            for cut_h in range(1, h):
+                if highest_val < c[w][cut_h] + c[w][h - cut_h]:
+                    highest_val = c[w][cut_h] + c[w][h - cut_h]
+            c[w][h] = highest_val
 
+    return c[paper_width][paper_height]
 
 
 def max_value_top_down(c, widths, heights, values, paper_width, paper_height, min_size):
@@ -100,7 +117,7 @@ def main():
     widths = []
     heights = []
     values = []
-    stdin = open("input_eksempel_02.txt", "r+")
+    #stdin = open("input_eksempel_01.txt", "r+")
     for triple in stdin.readline().split():
         if len(triple) > 0:
             dim_value = triple.split(':', 1)
