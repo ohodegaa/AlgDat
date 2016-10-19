@@ -20,10 +20,39 @@ def min_coins_greedy(coins, value):
 
     return num_of_coins
 
-
+def show_table(c):
+    for i in range(len(c[0])):
+        for j in range(len(c)):
+            print(c[j][i], end=" , ")
+        print()
 def min_coins_dynamic(coins, value):
-    # SKRIV DIN KODE HER
-    pass
+    c = [[0 for v in range(value + 1)] for w in range(len(coins) + 1)]
+
+    for v in range(value + 1):
+        c[1][v] = v
+
+    for w in range(2, len(coins) + 1):
+        for v in range(1, value + 1):
+            # dersom penge-verdien er lik verdien på coin
+            if coins[w - 1] == v:
+                c[w][v] = 1
+
+            # dersom verdien på coin er større enn penge-verdien
+            # dvs. at verdien på coin er for stor til å bruke som veksel
+
+            elif coins[w - 1] > v:
+                c[w][v] = c[w - 1][v]
+
+            # dersom verdien på coin er mindre enn penge-verdien
+            # dvs. vi må velge mellom å bruke det forrige brukte
+            # antall mynter (c[w-1][v]) og verdien - mynt-verdien + 1 (altså legger til en mynt til)
+
+            else: # elif coins[w - 1] < v:
+                c[w][v] = min(c[w - 1][v], 1 + c[w][v - coins[w - 1]])
+
+    show_table(c)
+    return c[-1][-1]
+
 
 
 def can_use_greedy(coins):
@@ -31,6 +60,7 @@ def can_use_greedy(coins):
     # hva som er kriteriet for at den graadige algoritmen skal fungere
     # SKRIV DIN KODE HER
     pass
+
 
 coins = []
 for c in stdin.readline().split():
@@ -43,4 +73,4 @@ if method == "graadig" or (method == "velg" and can_use_greedy(coins)):
         print(min_coins_greedy(coins, int(line)))
 else:
     for line in stdin:
-        print(min_coins_dynamic(coins, int(line)))
+        print(min_coins_dynamic(sorted(coins), int(line)))
