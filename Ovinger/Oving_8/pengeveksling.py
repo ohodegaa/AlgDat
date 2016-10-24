@@ -50,16 +50,22 @@ def min_coins_dynamic(coins, value):
             else: # elif coins[w - 1] < v:
                 c[w][v] = min(c[w - 1][v], 1 + c[w][v - coins[w - 1]])
 
-    show_table(c)
+    #show_table(c)
     return c[-1][-1]
 
 
 
 def can_use_greedy(coins):
-    # bare returner False her hvis du ikke klarer aa finne ut
-    # hva som er kriteriet for at den graadige algoritmen skal fungere
-    # SKRIV DIN KODE HER
-    pass
+    for i in range(len(coins) - 2):
+        can_use = False
+        for j in range(i+1, len(coins) - 1):
+            if coins[i]%coins[j] == 0:
+                can_use = True
+        if not can_use:
+            return False
+    return True
+
+
 
 
 coins = []
