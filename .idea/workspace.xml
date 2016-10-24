@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4d7bb3f-91d6-44c3-9e64-493f66591e33" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ovinger/Oving_9/ratatosk.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/AlgDat.iml" afterPath="$PROJECT_DIR$/.idea/AlgDat.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt" />
     </list>
     <ignored path="AlgDat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +52,8 @@
       <file leaf-file-name="input_eksempel_01.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -109,6 +107,7 @@
         <option value="$PROJECT_DIR$/Ovinger/Oving_8/input_eksempel_02.txt" />
         <option value="$PROJECT_DIR$/Ovinger/Oving_8/pengeveksling.py" />
         <option value="$PROJECT_DIR$/Ovinger/Oving_9/ratatosk.py" />
+        <option value="$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt" />
       </list>
     </option>
   </component>
@@ -987,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
