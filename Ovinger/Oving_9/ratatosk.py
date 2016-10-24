@@ -25,15 +25,21 @@ def dfs(root):
     if root.ratatosk:
         return 0
     root.next_child = 0
+    node = root
     q.append(root)
-
     while len(q) > 0:
-        node = q.pop()
-        if node.ratatosk:
-            return node.dist
         if node.next_child < len(node.child):
-            node.child[node.next_child].dist = node.dist + 1
-            q.append(node.child[node.next_child])
+            parent = node
+            node = node.child[parent.next_child]
+            parent.next_child += 1
+            node.dist = parent.dist + 1
+            if node.ratatosk:
+                return node.dist
+            q.append(parent)
+        else:
+            node = q.pop()
+
+
 
 
 
