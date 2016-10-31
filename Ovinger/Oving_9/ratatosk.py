@@ -1,12 +1,9 @@
 __author__ = 'ohodegaa'
-
-from queue import deque
 #!/usr/bin/python3
 
+from random import randint
+from queue import deque
 from sys import stdin
-
-
-
 
 
 class Node:
@@ -16,11 +13,8 @@ class Node:
         self.next_child = 0
         self.dist = 0
 
-    def __repr__(self):
-        return "Dist: " + str(self.dist) + ", " + str(self.ratatosk)
 
-
-def dfs(root):
+def dfs(root: Node) -> int:
     q = deque([])
     if root.ratatosk:
         return 0
@@ -40,17 +34,11 @@ def dfs(root):
             node = q.pop()
 
 
-
-
-
-
-
-def bfs(root: Node):
+def bfs(root: Node) -> int:
     q = deque([])
     if root.ratatosk:
         return 0
     q.append(root)
-
     while len(q) > 0:
         node = q.popleft()
         for child in node.child:
@@ -60,11 +48,6 @@ def bfs(root: Node):
             q.append(child)
 
 
-
-
-
-
-stdin = open("input_eksempel_01.txt", "r+")
 function = stdin.readline().strip()
 number_of_nodes = int(stdin.readline())
 nodes = []
@@ -73,6 +56,7 @@ for i in range(number_of_nodes):
 start_node = nodes[int(stdin.readline())]
 ratatosk_node = nodes[int(stdin.readline())]
 ratatosk_node.ratatosk = True
+
 for line in stdin:
     number = line.split()
     temp_node = nodes[int(number.pop(0))]
@@ -85,5 +69,4 @@ elif function == 'bfs':
     print(bfs(start_node))
 
 elif function == 'velg':
-    # SKRIV DIN KODE HER
-    pass
+    print(bfs(start_node))
