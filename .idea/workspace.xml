@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4d7bb3f-91d6-44c3-9e64-493f66591e33" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_1/input_eksempel.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_01/input_eksempel.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_1/input_file.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_01/input_file.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_2/fd.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_02/fd.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_2/input_eksempel.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_02/input_eksempel.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_2/ordbok.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_02/ordbok.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_3/carddeck.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_03/carddeck.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_3/carddeck2.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_03/carddeck2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_3/input_eksempel_01.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_03/input_eksempel_01.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_3/test.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_03/test.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_4/input_eksempel_01.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_04/input_eksempel_01.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_4/pipesorting.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_04/pipesorting.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_5/flexradix.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_05/flexradix.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_5/input_eksempel_01.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_05/input_eksempel_01.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_6/draw_tree.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_06/draw_tree.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_6/input_eksempel_01" afterPath="$PROJECT_DIR$/Ovinger/Oving_06/input_eksempel_01" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_7/input_eksempel_01.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_07/input_eksempel_01.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_7/input_eksempel_02.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_07/input_eksempel_02.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_7/seddeltrykkeriet.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_07/seddeltrykkeriet.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_8/input_eksempel_01.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_08/input_eksempel_01.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_8/input_eksempel_02.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_08/input_eksempel_02.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_8/pengeveksling.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_08/pengeveksling.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_09/input_eksempel_01.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Ovinger/Oving_9/ratatosk.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_09/ratatosk.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/AlgDat.iml" afterPath="$PROJECT_DIR$/.idea/AlgDat.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt" afterPath="$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ovinger/Oving_9/ratatosk.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_9/ratatosk.py" />
     </list>
     <ignored path="AlgDat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,30 +63,7 @@
     <favorites_list name="AlgDat" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="input_eksempel_01.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ratatosk.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Ovinger/Oving_9/ratatosk.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding>
-                <element signature="e#44#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,34 +153,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="AlgDat">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="AlgDat">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Ovinger">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,23 +184,33 @@
               <option name="myItemId" value="Ovinger" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Oving_9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="AlgDat">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgDat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgDat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="AlgDat">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ovinger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Ovinger">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -601,16 +583,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09012876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16380544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35448277" sideWeight="0.50858366" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38661203" sideWeight="0.4914163" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3852459" sideWeight="0.4914163" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -655,112 +637,112 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/input_file.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/input_file.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_2/ordbok.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_02/ordbok.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_2/input_eksempel.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_02/input_eksempel.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/input_file.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/input_file.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_1/sprengstoff.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_01/sprengstoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
@@ -769,7 +751,7 @@
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/traceback.py" />
     <entry file="file://$PROJECT_DIR$/Ovinger/hei/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_2/fd.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_02/fd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -797,56 +779,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_3/input_eksempel_01.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_03/input_eksempel_01.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_3/test.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_03/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_3/carddeck2.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_03/carddeck2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2130">
           <caret line="144" column="10" selection-start-line="144" selection-start-column="10" selection-end-line="144" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_3/carddeck.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_03/carddeck.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_4/input_eksempel_01.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_04/input_eksempel_01.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_2/input_eksempel.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_02/input_eksempel.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_4/pipesorting.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_04/pipesorting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_2/ordbok.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_02/ordbok.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
@@ -872,7 +854,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_5/input_eksempel_01.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_05/input_eksempel_01.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
@@ -900,7 +882,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_5/flexradix.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_05/flexradix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
@@ -908,14 +890,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ovinger/Oving_6/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_6/input_eksempel_01">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_06/input_eksempel_01">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_6/draw_tree.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_06/draw_tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
@@ -929,71 +911,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_7/input_eksempel_02.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_07/input_eksempel_02.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_7/input_eksempel_01.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_07/input_eksempel_01.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_7/seddeltrykkeriet.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_07/seddeltrykkeriet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_8/pengeveksling.py">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_08/pengeveksling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
           <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_8/input_eksempel_01.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_08/input_eksempel_01.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_8/input_eksempel_02.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_08/input_eksempel_02.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_9/input_eksempel_01.txt">
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_9/oving_9_teori.py" />
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_09/ratatosk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_09/input_eksempel_01.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_9/oving_9_teori.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ovinger/Oving_9/ratatosk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="e#44#70#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
