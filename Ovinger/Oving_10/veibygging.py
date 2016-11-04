@@ -6,7 +6,27 @@ from sys import stdin
 Inf = float(1e3000)
 
 def mst(nm):
-    # SKRIV DIN KODE HER
+    tree = []
+    node = 0
+    weight = - 1
+    while len(tree) < len(nm):
+        nm[node] = None
+        tree.append(node)
+        min_w = Inf
+        for r in range(len(nm)):
+            if nm[r] is None:
+                continue
+            for c in tree:
+                if nm[r][c] < min_w and nm[r][c] != Inf:
+                    min_w = nm[r][c]
+                    node = r
+        weight = max(weight, min_w)
+
+    return weight
+
+
+
+
 
 
 lines = []
