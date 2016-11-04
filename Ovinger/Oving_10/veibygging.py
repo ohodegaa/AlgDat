@@ -6,23 +6,21 @@ from sys import stdin
 Inf = float(1e3000)
 
 def mst(nm):
-    tree = []
-    node = 0
-    weight = - 1
+    current_node = 0
+    weights = []
+    tree = [current_node]
     while len(tree) < len(nm):
-        nm[node] = None
-        tree.append(node)
         min_w = Inf
         for r in range(len(nm)):
-            if nm[r] is None:
+            if r in tree:
                 continue
             for c in tree:
                 if nm[r][c] < min_w and nm[r][c] != Inf:
                     min_w = nm[r][c]
-                    node = r
-        weight = max(weight, min_w)
-
-    return weight
+                    current_node = r
+        weights.append(min_w)
+        tree.append(current_node)
+    return max(weights)
 
 
 
