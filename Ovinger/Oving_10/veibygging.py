@@ -6,6 +6,9 @@ from sys import stdin
 Inf = float(1e3000)
 
 def mst(nm):
+    mst_prim(nm)
+
+def mst_prim(nm):
     current_node = 0
     weights = []
     tree = [current_node]
@@ -21,8 +24,6 @@ def mst(nm):
         weights.append(min_w)
         tree.append(current_node)
     return max(weights)
-
-
 
 
 
