@@ -8,21 +8,22 @@ def best_path(nm, prob):
 
 
 def dijkstra(nm, prob):
-    n = len(nm)
-    visited = [False] * n
-    ancestors = [-1] * n
-    k_prob = [0.0] * n
-    k_prob[0] = prob[0]
+    n = len(nm)             # nm er en n x n -matirse
+    visited = [False] * n   # ei liste som holder styr på hvilke noder som er besøkt
+    ancestors = [-1] * n    # for å finne veien som er mest sannsynlig trenger vi ei liste som holder styr
+                            # på ancestor til enhver node (ancestor[i] angir noden som er forelder til node i
+    k_prob = [0.0] * n      # den kummulative sannsynligheten for at veien går fra node 0 til node i
+    k_prob[0] = prob[0]     # det er prob[0] sannsynlig het for å komme til startnoden
     next_node = 0
     for i in range(n):
         node = next_node
-        visited[node] = True
+        visited[node] = True    # vi har nå besøkt node
         maxi_prob = -1.0
-        for adj in range(n):
-            if not visited[adj]:
+        for adj in range(n):    # vi ønsker her å finne naboen til node som vi mest sannsynlig vil besøke neste
+            if not visited[adj]:    # som vi ikke har besøkt før
                 if nm[node][adj] * k_prob[node] * prob[adj] > k_prob[adj]:
-                    k_prob[adj] = k_prob[node] * prob[adj]
-                    ancestors[adj] = node
+                    k_prob[adj] = k_prob[node] * prob[adj]          # oppdaterer sannssynlighet for å komme seg til
+                    ancestors[adj] = node                           # denn naboen
                 if k_prob[adj] > maxi_prob:
                     next_node = adj
                     maxi_prob = k_prob[adj]
