@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4d7bb3f-91d6-44c3-9e64-493f66591e33" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Algorithms/SP_allToAll/floydWarshall.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ovinger/Oving_12/input_eksempel_01.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/AlgDat.iml" afterPath="$PROJECT_DIR$/.idea/AlgDat.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ovinger/Oving_12/alletilalle.py" afterPath="$PROJECT_DIR$/Ovinger/Oving_12/alletilalle.py" />
     </list>
     <ignored path="AlgDat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -587,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479227005861</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Oving_12&#10;">
+      <created>1479241555359</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1479241555359</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -638,9 +642,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="changes in sort_by_index" />
     <MESSAGE value="Implemented Dijkstra" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Dijkstra" />
+    <MESSAGE value="Oving_12&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oving_12&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
